@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GUNGS PUDINGS 🍮</title>
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --biru-tua: #0b1026;
+      --biru-galaksi: #1b2a4e;
+      --biru-aksen: #4fc3ff;
+      --putih: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: radial-gradient(circle at top, #1b2a4e, #050816);
+      color: var(--putih);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      min-height: 100vh;
+      background:
+        linear-gradient(rgba(5,8,22,0.8), rgba(5,8,22,0.9)),
+        url('https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .hero-content {
+      max-width: 720px;
+      margin: auto;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .hero h1 {
+      font-size: 2.6rem;
+      margin-bottom: 15px;
+      color: var(--biru-aksen);
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      opacity: 0.9;
+    }
+
+    .btn-wa {
+      display: inline-block;
+      background: linear-gradient(135deg, #4fc3ff, #1e88e5);
+      color: #000;
+      padding: 14px 30px;
+      border-radius: 30px;
+      font-weight: 700;
+      transition: 0.3s;
+    }
+
+    .btn-wa:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(79,195,255,0.8);
+    }
+
+    section {
+      padding: 70px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 35px;
+      color: var(--biru-aksen);
+      font-size: 2rem;
+    }
+
+    /* ===== CARD ===== */
+    .card {
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 30px;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    /* ===== MENU ===== */
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .menu-item {
+      text-align: center;
+      padding: 25px;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.06);
+      transition: 0.3s;
+    }
+
+    .menu-item:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 0 20px rgba(79,195,255,0.4);
+    }
+
+    .menu-item h3 {
+      margin-top: 10px;
+      color: var(--biru-aksen);
+    }
+
+    /* ===== KEUNGGULAN ===== */
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+      gap: 20px;
+      text-align: center;
+    }
+
+    /* ===== CTA ===== */
+    .cta {
+      background: linear-gradient(135deg, #0d47a1, #000428);
+      border-radius: 25px;
+      text-align: center;
+      padding: 60px 25px;
+    }
+
+    .cta h2 {
+      color: #4fc3ff;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 35px 20px;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-content">
+      <h1>Puding Selembut Galaksi 🍮✨</h1>
+      <p>Manisnya creamy, selembut bintang, dibuat fresh setiap hari</p>
+      <a class="btn-wa"
+         href="https://wa.me/62895320878745?text=Halo%20GUNGS%20PUDINGS%20🍮,%20saya%20mau%20pesan%20puding%20dong"
+         target="_blank">
+        Pesan Sekarang via WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- TENTANG -->
+  <section>
+    <div class="card">
+      <h2>Tentang GUNGS PUDINGS</h2>
+      <p style="text-align:center;">
+        GUNGS PUDINGS adalah puding homemade dengan tekstur super lembut
+        dan rasa creamy yang bikin nagih. Dibuat fresh setiap hari,
+        cocok untuk semua umur dan momen.
+      </p>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section>
+    <h2>Menu Favorit</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <h3>Puding Coklat</h3>
+        <p>Lembut & rich coklat</p>
+      </div>
+      <div class="menu-item">
+        <h3>Puding Vanilla</h3>
+        <p>Manis ringan & harum</p>
+      </div>
+      <div class="menu-item">
+        <h3>Vla Creamy</h3>
+        <p>Super creamy & lembut</p>
+      </div>
+      <div class="menu-item">
+        <h3>Topping Oreo</h3>
+        <p>Renyes & bikin nagih</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEUNGGULAN -->
+  <section>
+    <h2>Kenapa Harus Coba?</h2>
+    <div class="grid-4">
+      <div class="card">🍮 Fresh setiap hari</div>
+      <div class="card">✨ Tekstur super lembut</div>
+      <div class="card">💙 Harga ramah</div>
+      <div class="card">👨‍👩‍👧 Cocok semua umur</div>
+    </div>
+  </section>
+
+  <!-- TESTIMONI -->
+  <section>
+    <div class="card">
+      <h2>Apa Kata Mereka?</h2>
+      <p style="text-align:center;">
+        “Pudingnya lembut banget, rasanya enak dan nagih!”<br><br>
+        “Anak-anak langsung minta nambah 😍”
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section>
+    <div class="cta">
+      <h2>Stok Terbatas, Dibuat Harian 🚀</h2>
+      <p>Jangan kehabisan, klik sekarang!</p><br>
+      <a class="btn-wa"
+         href="https://wa.me/62895320878745?text=Halo%20GUNGS%20PUDINGS%20🍮,%20saya%20mau%20pesan%20puding%20dong"
+         target="_blank">
+        Pesan via WhatsApp Sekarang
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <strong>GUNGS PUDINGS</strong><br>
+    WhatsApp: 0895-3208-78745
+  </footer>
+
+</body>
+</html>
